@@ -23,4 +23,5 @@ jobs:
       uses: actions/checkout@main
       
     - name: Publish to RubyGems
-      run: echo ${{ secrets.SuperSecret }}
+      run: |
+        example-command "$env:SUPER_SECRET"
