@@ -1,6 +1,8 @@
 name: Github Action Research
 
 on:
+  workflow_dispatch:
+
   pull_request:
     branches:
       - main
@@ -28,7 +30,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
     
-    - name: Check SSH_HOST_TEST environment is exists
+    - name: Check SSH_HOST_TEST variable is exists
       run: echo ${{ secrets.SSH_HOST_TEST }}
 
     
