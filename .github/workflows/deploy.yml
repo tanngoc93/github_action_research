@@ -1,4 +1,4 @@
-name: Automated Deployment
+name: Github Action Research
 
 on:
   pull_request:
@@ -15,3 +15,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+      
+    - name: Publish to RubyGems
+      run: echo "ENV_TEST : ${{secrets.ENV_TEST}}"
