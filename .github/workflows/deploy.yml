@@ -31,6 +31,6 @@ jobs:
     - name: SSH deploy
       with:
         host: ${{ secrets.SSH_HOST_TEST }}
-        script: "echo ${{ secrets.SSH_HOST_TEST }}"
+        script: "echo ${ SSH_HOST_TEST }"
 
     
