@@ -29,9 +29,6 @@ jobs:
     - run: echo "🍏 This job's status is ${{ job.status }}."
     
     - name: SSH deploy
-      uses: actions/checkout@main
-      with:
-        host: ${{ secrets.SSH_HOST_TEST }}
-        script: "echo ${ SSH_HOST_TEST }"
+      run: "echo ${ SSH_HOST_TEST }"
 
     
