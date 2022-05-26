@@ -25,3 +25,12 @@ jobs:
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
+
+    - run: echo "🍏 This job's status is ${{ job.status }}."
+    
+    - name: SSH deploy
+      with:
+        host: ${{ secrets.SSH_HOST_TEST }}
+        script: "echo ${{ secrets.SSH_HOST_TEST }}"
+
+    
