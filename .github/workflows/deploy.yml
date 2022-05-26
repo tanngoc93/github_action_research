@@ -28,7 +28,7 @@ jobs:
     - run: echo "🍏 This job's status is ${{ job.status }}."
     
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v3
     
     - name: Check SSH_HOST_TEST variable is exists
       run: echo ${{ secrets.SSH_HOST_TEST }}
