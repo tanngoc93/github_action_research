@@ -29,6 +29,6 @@ jobs:
     - run: echo "🍏 This job's status is ${{ job.status }}."
     
     - name: SSH deploy
-      run: "echo ${ SSH_HOST_TEST }"
+      run: "echo $SSH_HOST_TEST"
 
     
