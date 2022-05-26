@@ -29,6 +29,6 @@ jobs:
       uses: actions/checkout@main
     
     - name: Check SSH_HOST_TEST environment is exists
-      run: echo ${{ env.SSH_HOST_TEST }}
+      run: echo ${{ secrets.SSH_HOST_TEST }}
 
     
